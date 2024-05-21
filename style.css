@@ -1,0 +1,198 @@
+@font-face{
+    font-family: '3dumbregular';
+    src: url('fonts2/3dumb-webfont.woff2') format('woff2'),
+         url('fonts2/3dumb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+
+@font-face {
+    font-family: 'zantrokeregular';
+    src: url('fonts/zantroke-webfont.woff2') format('woff2'),
+         url('fonts/zantroke-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: rgb(5, 0, 10);
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+    margin: 0;
+    color: rgb(110, 0, 150);
+    font-size: 20px;
+}
+
+.bigLeft{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('img/adam-gonzales-cfKwE7k9qqA-unsplash.jpg');
+    background-size: 100% 100%;
+}
+
+.logo{
+    height: 15%;
+    width: 100%;
+    margin-top: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(5, 0, 10, 0.30);
+    animation: neon 1s ease-in-out infinite alternate;
+    font-size: 70px;
+    font-family: '3dumbregular'
+}
+
+@keyframes neon {
+    from{
+        text-shadow:
+        0 0 20px rgb(200, 100, 200),
+        0 0 50px rgb(200, 100, 200),
+        0 0 15px rgb(250, 5, 100),
+        0 0 25px rgb(250, 5, 100),
+        0 0 35px rgb(5, 0, 10),
+        0 0 45px rgb(5, 0, 10);
+
+        color: rgb(5, 0, 10);
+    }
+    to {
+        text-shadow:
+        0 0 40px rgb(50, 0, 100),
+        0 0 10px rgb(50, 0, 100),
+        0 0 30px rgb(25, 0, 70),
+        0 0 50px rgb(25, 0, 70),
+        0 0 70px rgb(5, 0, 10),
+        0 0 90px rgb(5, 0, 10);
+
+        color: rgb(140, 0, 185);
+    }
+}
+
+.logoImg{
+    background-image: url('img/odin-lined.png');
+    background-size: 100% 100%;
+    width: 25%;
+    height: 100%;
+}
+
+.imgLink{
+    font-size: 10px;
+    display: flex;
+    align-self: center;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(5, 0, 10, 0.30);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(140, 0, 185);
+    margin: 0px 3px;
+}
+
+.bigRight{
+    width: 60%;
+    padding: 5% 15% 5% 5%;
+}
+
+.notReal{
+    font-size: 20px;
+    text-shadow: 0 0 10px rgb(35, 0, 65);
+    font-family: 'zantrokeregular', serif;
+}
+
+.tiny{
+    font-size: 5px;
+}
+
+em{
+    color: rgb(140, 0, 185);
+}
+
+.form{
+    background-color: rgb(20, 0, 25);
+    padding: 10px 0px 10px 10px;
+    border-radius: 20px;
+    width: fit-content;
+    box-shadow: 0 0 20px rgb(50, 0, 75);
+    margin-top: 10%;
+    font-family: 'zantrokeregular', serif;
+}
+
+.formHead{
+    font-size: 30px;
+}
+
+.userLine{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 10px 20px 0px;
+    font-size: 13px;
+}
+
+.userLine div:first-child{
+    margin-right: 100px;
+}
+
+input{
+    height: 25px;
+    border-radius: 10px;
+    border: solid 3px rgb(35, 0, 65);
+    background-color: rgb(204, 150, 255);
+    font-size: 15px;
+    text-align: center;
+}
+
+input:invalid{
+    border: solid 3px rgb(150, 0, 0);
+    background-color: rgb(255, 150, 150);
+}
+
+input:focus{
+    border: solid 3px rgb(0, 150, 20);
+    background-color: rgb(150, 255, 160);
+}
+
+.accBtn{
+    margin: 10% 0px;
+    padding: 20px 80px;
+    width: fit-content;
+    border-radius: 10px;
+    font-size: 20px;
+    animation: neonBorder 1s ease-in-out infinite alternate;
+    font-family: 'zantrokeregular', serif;
+}
+
+@keyframes neonBorder{
+    from{
+        border: solid 3px rgb(5, 0, 10);
+        background-color: rgb(140, 0, 185);
+        color: rgb(5, 0, 10);
+    }
+    to {
+        border: double 3px rgb(140, 0, 185);
+        background-color: rgb(5, 0, 10);
+        color: rgb(140, 0, 185);
+    }
+}
+
+.logIn{
+    display: flex;
+    flex-direction: row;
+}
+
+.logInBtn{
+    padding-left: 5px;
+    color: rgb(140, 0, 185);
+}
+
